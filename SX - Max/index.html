@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max International</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|PT+Serif|Quattrocento+Sans" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <!-- JS Stylesheet -->
+  <script type="text/javascript" src="js/funciones.js"></script>
+  <!-- Icon -->
+  <link rel="icon" href="imagenes/maxicon.ico">
+  <script type="text/javascript">
+    function slides() {
+      var slides = document.querySelectorAll('#slides .slide');
+      var currentSlide = 0;
+      var slideInterval = setInterval(nextSlide, 4000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide showing';
+      }
+    }
+  </script>
+</head>
+<body onload="slides();">
+<!--
+
+ <div id="video">
+  <video poster="css/fondoazul/azul9.jpg" autoplay="true" loop>
+    <source src="videos/nubes.mp4" type="video/mp4">
+    <source src="videos/nubes.webm" type="video/webm">
+ </video>
+ </div>
+-->
+
+  <div id="contenedor">
+    <div id="encabezado">
+      <ul id="nav">
+        <li><a href="https://www.max.com/weightmanagement/290358/cr/es">Bajo de Peso</a></li>
+        <li><a href="http://www.max.com/skincare/full/cr/es">Cuidado de Piel</a></li>
+        <li><a href="masinformacion.html">Más Información</a></li>
+      </ul>
+      <div id="logo">
+        <a href="index.html"><img width="242" height="82" src="imagenes/logo.png"></a>
+      </div>
+    </div>
+
+    <ul id="slides">
+      <li class="slide showing"></li>
+      <li class="slide"></li>
+      <li class="slide"></li>
+    </ul>
+    <div style="float: right; padding: 10px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eX9ScR6ul8c" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="principal">
+      <p>Max International está comprometido a ayudarle a verse, sentirse, y vivir al máximo todos los días. Independientemente de si está buscando suplementos científicamente comprobados; un control de peso seguro y eficaz; o un cuidado de la piel embellecedor, el objetivo de Max International es ayudar a su salud.</p>
+    </div>
+    <div>
+      <p>Los productos de Max International han sido diseñados para mejorar un componente vital para su salud y bienestar: el glutatión. El glutatión es el antioxidante más importante que existe dentro de cada uno de los billones de células que componen el cuerpo humano. Hemos sido reconocidos como el líder mundial en suplementos que mejoran el glutatión, ya que las fórmulas de nuestros productos basados en la ciencia incrementan la capacidad natural del para alcanzar niveles óptimos de bienestar.</p>
+    </div>
+    <hr>
+    <div id="encabsup">
+      <h1>Suplementos Nutricionales</h1></div>
+    <hr>
+
+    <!--contenido de los productos-->
+
+    <table>
+      <th colspan="2">
+        <h2>MaxGXL</h2>
+      </th>
+      <tr>
+        <td align="center">
+
+          <!-- Inicializar el Modal -->
+          <img class="fotos" id="myimg01" src="imagenes/maxgxl.png" alt="Max Gxl">
+
+          <!-- El Modal -->
+          <div id="myModal01" class="modal">
+
+            <!-- Boton de cerrar -->
+            <span class="close" onclick="document.getElementById('myModal01').style.display='none'">&times;</span>
+
+            <!-- Contenido del modal (imagen) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Subtitulo para el modal -->
+            <div class="caption"></div>
+          </div>
+
+          <img class="fotos" id="myimg02" src="imagenes/maxGxlDatos.jpg" alt="Datos Suplementarios" width="80%">
+          <div id="myModal02" class="modal">
+            <span class="close" onclick="document.getElementById('myModal02').style.display='none'">&times;</span>
+            <img class="modal-content" id="img02">
+            <div class="caption"></div>
+          </div>
+        </td>
+        <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4PyEdlje-_U" frameborder="0" allowfullscreen></iframe>
+          <p>MaxGXL de Max International cuenta con una fórmula exclusiva de N-acetil-cisteína (NAC), diseñada especialmente para brindarle al cuerpo los nutrientes que necesita para mantener sus niveles deglutatión, una molécula esencial para ayudar a mantener la buena salud.</p>
+        </td>
+      </tr>
+      <th colspan="2">
+        <h2>MaxOne</h2>
+      </th>
+      <tr>
+        <td align="center">
+          <img class="fotos" id="myimg03" src="imagenes/maxone.png" alt="Max One">
+          <div id="myModal03" class="modal">
+            <span class="close" onclick="document.getElementById('myModal03').style.display='none'">&times;</span>
+            <img class="modal-content" id="img03">
+            <div class="caption"></div>
+          </div>
+          <img class="fotos" id="myimg04" src="imagenes/maxonedatos.jpg" alt="Datos Suplementarios" width="80%">
+          <div id="myModal04" class="modal">
+            <span class="close" onclick="document.getElementById('myModal04').style.display='none'">&times;</span>
+            <img class="modal-content" id="img04">
+            <div class="caption"></div>
+          </div>
+
+        </td>
+        <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KsbpqHi9zzw" frameborder="0" allowfullscreen></iframe>
+          <p>MaxOne está creado con la tecnología exclusiva del RiboCeine de Max International que combina los nutrientes de la D-ribosa y L-cisteína para favorecer eficientemente la producción del glutatión en su cuerpo.</p>
+        </td>
+      </tr>
+      <th colspan="2">
+        <h2>Cellgevity</h2>
+      </th>
+      <tr>
+        <td align="center">
+          <img class="fotos" id="myimg05" width="80%" src="imagenes/cellgevity.jpg" alt="Max Cellgevity">
+          <div id="myModal05" class="modal">
+            <span class="close" onclick="document.getElementById('myModal05').style.display='none'">&times;</span>
+            <img class="modal-content" id="img05">
+            <div class="caption"></div>
+          </div>
+          <img class="fotos" id="myimg06" src="imagenes/maxCellDatos.png" width="80%" alt="Datos Suplementarios">
+          <div id="myModal06" class="modal">
+            <span class="close" onclick="document.getElementById('myModal06').style.display='none'">&times;</span>
+            <img class="modal-content" id="img06">
+            <div class="caption"></div>
+          </div>
+        </td>
+        <td>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K1hiMMcYYpo" frameborder="0" allowfullscreen></iframe>
+          <p>Cellgevity es la exclusiva fórmula de Max y cuenta con nuestra tecnología patentada RiboCeine, una mezcla especial de D-ribosa y L-cisteína, combinada con una colección estelar de 12 ingredientes complementarios para realzar con mayor eficacia la función del glutatión dentro de su cuerpo.</p>
+        </td>
+      </tr>
+      <th colspan="2">
+        <h2>Max N-Fuze</h2>
+      </th>
+      <tr>
+        <td>
+          <img id="myimg07" class="fotos" src="imagenes/maxnfuze.jpg" alt="Max N-Fuze">
+          <div id="myModal07" class="modal">
+            <span class="close" onclick="document.getElementById('myModal07').style.display='none'">&times;</span>
+            <img class="modal-content" id="img07">
+            <div class="caption"></div>
+          </div>
+          <ul>
+            <li>Contiene valiosos antioxidantes directos e indirectos</li>
+            <li>Proporciona importantes vitaminas y nutrientes</li>
+            <li>Fomenta y mejora la función del glutatión</li>
+          </ul>
+        </td>
+        <td>
+          <p>Max N-Fuze es un nutriente de reaprovisionamiento que se ha diseñado específicamente para proporcionar antioxidantes directos e indirectos, junto con vitaminas y nutrientes importantes. Esta combinación exclusiva funciona en conjunto para ayudar a mantener los niveles de glutatiónen el cuerpo y para defenderlo ante influencias y agresores externos, como los radicales libres, toxinas químicas y metales pesados.</p>
+          <p>Max N-Fuze permite a las células funcionar en niveles óptimos. Use Max N-Fuze una vez al día como suplemento vitamínico independiente o con cualquiera de los productos de Max International para mejorar los niveles de glutatión.</p>
+        </td>
+      </tr>
+      <th colspan="2">
+        <h2>MaxATP</h2>
+      </th>
+      <tr>
+        <td>
+          <img id="myimg08" class="fotos" src="imagenes/maxatp.png" alt="Max ATP">
+          <div id="myModal08" class="modal">
+            <span class="close" onclick="document.getElementById('myModal08').style.display='none'">&times;</span>
+            <img class="modal-content" id="img08">
+            <div class="caption"></div>
+          </div>
+        </td>
+        <td>
+          <p>Ya sea en la cancha de baloncesto o la sala de juntas, el campo de fútbol o en el aula, MaxATP es esencial para resultados prolongados. MaxATP aprovecha el poder de la tecnología RiboCeine™ patentada por Max International, junto con otros diez nutrientes esenciales para fomentar la producción celular de trifosfato de adenosina (ATP), fuente natural de energía para las células y el glutatión, el principal antioxidante en el cuerpo.</p>
+          <p>A diferencia de las bebidas energéticas, no hay bajones o fatiga tras la subida de energía. Con MaxATP usted se siente y funciona física y mentalmente a pleno rendimiento, de principio a fin.</p>
+        </td>
+      </tr>
+    </table>
+    <div id="footer">
+      <p><a href="contacto.html" class="contacto">Contáctenos</a></p>
+      <p class="copyright">Copyright &copy; 2016 Erley Alpizar
+      </p>
+    </div>
+  </div>
+</body>
+</html>

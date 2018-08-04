@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <meta charset="utf-8">
+    <!-- Ask what this is    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Max International</title>
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|PT+Serif|Quattrocento+Sans">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!--  Icon -->
+    <link rel="icon" href="imagenes/max%20icon.ico">
+    <!-- Ask what this is    -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- JS Stylesheet -->
+     <script type="text/javascript" src="js/funciones.js"></script>
+     <!-- JQuery Map -->
+     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD3UFSVFI0RTAfd-INR0facn1ctHWx7vq0"></script>
+     <!-- JS Google Map -->
+     <script type="text/javascript">
+       (function() {
+         window.onload = function() {
+           var mapDiv = document.getElementById('mapa_grande');
+           var latlng = new google.maps.LatLng(9.946424, -84.1211851);
+           var options = {center: latlng, zoom: 18, mapTypeId: google.maps.MapTypeId.ROADMAP, streetViewControl: true};
+           var map = new google.maps.Map(mapDiv, options);
+           var bounds = new google.maps.LatLngBounds();
+
+           var max = new google.maps.MarkerImage('imagenes/star.jpg');
+
+           var marker = new google.maps.Marker({position: new google.maps.LatLng(9.946424, -84.1211851), map: map, title: 'Max International', icon:max});
+           bounds.extend(new google.maps.LatLng(9.946424, -84.1211851));
+           google.maps.event.addListener(marker, 'click', function() {  window.location.href = 'http://www.max.com/max/full/us/es';});
+         }
+       })();
+     </script>
+
+  </head>
+
+  <body>
+    <div id="contenedor2">
+      <div id="form">
+        <p id="infocontacto">Estamos aquí para responder cualquier pregunta que usted pueda tener acerca de Max International.</p>
+        <form id="formulario" method="get">
+          <p class="textocontacto">Nombre</p>
+          <input type="text" name="nombre" id="nombre" placeholder="ej: John Smith"/>
+          <hr>
+          <p class="textocontacto">Teléfono</p>
+          <input type="text" name="telefono" id="telefono" placeholder="ej: 70104932"/>
+          <hr>
+          <p class="textocontacto">Correo electrónico</p>
+          <input type="email" name="correo" id="correo" placeholder="johnsmith@yahoo.com"/>
+          <hr>
+          <p class="textocontacto">Comentario</p>
+          <textarea id="comentario" name="comentario"></textarea>
+          <br/>
+          <input id="btnEnviar" onclick="fncEnviar();" type="button" value="Enviar &#9786;"/>
+        </form>
+        <div id="mapa_grande"></div>
+        <p>Pavas, Blvd Rohrmoser de Plaza Mayor a 250m oeste,
+          Plaza La Amistad, local 2, San José, Costa Rica.</p>
+      </div>
+    </div>
+  </body>
+</html>

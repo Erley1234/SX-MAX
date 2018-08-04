@@ -1,0 +1,436 @@
+@charset 'utf-8';
+html {
+  background: url("fondoazul/azul9.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+body, html {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+/*
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  object-fit: cover;
+}
+*/
+
+title {
+  font-family: 'PT Serif', serif;
+}
+
+html {
+  font-family: 'PT Serif', sans-serif;
+}
+
+body {
+  font-family: 'PT Serif', sans-serif;
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 21px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+#contenedor {
+  border-style: outset;
+  background-color: #f6f6f6;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 3px;
+  z-index: 2;
+  position: relative;
+}
+
+#contenedor2 {
+  border-style: outset;
+  background-color: #FFFFE0;
+  width: 600px;
+  margin: auto;
+  padding: 15px;
+  margin-top: 5%;
+  z-index: 2;
+  position: relative;
+}
+
+#encabezado {
+  border-radius: 5px;
+  background: url(fondoazul/azul1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-style: groove;
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#contenido {
+  padding: 10px;
+  padding-left: 5px;
+  clear: both;
+}
+
+#menu {
+  width: 330px;
+  float: right;
+  padding-top: 10px;
+}
+
+#menu ul {
+  list-style-type: none;
+  font-size: 20px;
+  width: 260px;
+}
+
+#nav li {
+  width: 200px;
+  list-style: none;
+  float: left;
+}
+
+#nav li:hover {
+  background-color: #0089AD;
+}
+
+#encabsup {
+  text-align: center;
+  padding: 30px;
+  clear: both;
+  padding-top: 25px;
+}
+
+.contacto {
+  text-align: left;
+  float: left;
+  padding-left: 25px;
+}
+
+a.contacto {
+  color: white;
+}
+
+.copyright {
+  text-align: right;
+  padding-right: 25px;
+}
+
+#footer {
+  clear: both;
+  padding: 1px;
+  color: white;
+  border-style: groove;
+  background: url(fondoazul/azul1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+#infocontacto {
+  text-align: center;
+}
+
+#form {
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.textocontacto {
+  text-align: center;
+}
+
+#nav {
+  width: 600px;
+}
+
+#logo {
+  margin: -45px;
+  padding-left: 680px;
+}
+
+#ivideo {
+  display: block;
+  margin: auto;
+}
+
+#mapa_grande {
+  width:100%;
+  height:400px;
+}
+
+
+form {
+  width: 60%;
+  margin: auto;
+}
+
+#btnEnviar{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 28px;
+}
+
+hr {
+  margin-top: 20px;
+  border: 1px solid lightblue;
+  border-style: outset;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+#slides{
+  position: relative;
+  height: 265px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide{
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+
+.slide:nth-of-type(1){
+  background: url(fondocarousel/carousel1.jpg);
+}
+.slide:nth-of-type(2){
+  background: url(fondocarousel/carousel2.jpg);
+}
+.slide:nth-of-type(3){
+  background: url(fondocarousel/carousel3.jpg);
+}
+
+.fotos {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fotos:hover {
+  opacity: .7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
